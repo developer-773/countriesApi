@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <title>World Countries</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section class="map">
+            <div class="container">
+                <h2 class="visually-hidden">World countries map</h2>
+                <div id="map" style="width: 100%; height: 542px; margin: 120px 0;">      
+                </div>
+            </div>
+        </section>
+        <section class="countries pb-5">
+            <div class="container">
+                <h2 class="visually-hidden">Country info</h2>
+                <ul class="countries_list country row g-0 gy-5 mx-auto">
+                    
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="p-4">
+        <div class="container">
+            <hr>
+            <p class="text-center fw-4">© 2022 developer_773. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+
+    <div class="modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <!-- Template -->
+    <template class="template">
+        <li class="country_item col-5">
+            <div class="country_card-top d-flex justify-content-between align-items-center mb-4">
+                <img class="country_img" width="200" height="100" src="" alt="State flag">
+                <h2 class="country_title mb-3">Germany</h2>
+                <!-- <h2 class="country_info-txt">Infographics</h2> -->
+                <img class="country_gerb" width="100" height="100" src="" alt="State coat of arms">
+            </div>
+            <ul class="country_item-list">
+                <li class="country_item-item">
+                    <h3 class="country_population mb-2">Population</h3>
+                    <strong class="country_population-value">40.000.000</strong>    
+                </li>
+                <li class="country_item-item">
+                    <h3 class="country_region mb-2 mt-0">Region</h3>
+                    <strong class="country_region-value">Europe</strong>
+                </li>
+                <li class="country_item-item">
+                    <h3 class="country_capital mb-2">Capital</h3>
+                    <strong class="country_capital-value">Berlin</strong>
+                </li>
+                <li class="country_item-item">
+                    <h3 class="country_native-name">Native Name</h3>
+                    <strong class="country_native-name-value">Deutchland</strong>
+                </li>
+                <li class="country_item-item">
+                    <h3 class="country_language">Languages</h3>
+                    <strong class="country_language-value">German</strong>
+                </li>
+                <li class="country_item-item">
+                    <h3 class="country_currency">Currencies</h3>
+                    <strong class="country_currency-value">Euro</strong>
+                </li>
+                <li class="country_item-item">
+                    <h3 class="country_subregion">Subregion</h3>
+                    <strong class="country_subregion-value">Western Europe</strong>
+                </li>
+                <li class="country_item-item">
+                    <h3 class="country_map">Country Map
+                    </h3>
+                    <a class="country_map-link" href="">Map</a>
+                </li>
+            </ul>
+        </li>
+    </template>
+    <script src="./js/mapCountry.js"></script>
+    <script src="./js/map.js"></script>
+</body>
+</html>
